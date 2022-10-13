@@ -6,8 +6,9 @@
 const { pairAces, twoPair, flush } = require('./cards')
 
 function determineRank(hand) {
+    const cleanHand = hand.trim()
     let rank = ''
-    const value = pairAces(hand) + twoPair(hand) + flush(hand);
+    const value = pairAces(cleanHand) + twoPair(cleanHand) + flush(cleanHand);
     switch (value) {
         case 1:
             rank = 'Its a Pair of Aces!'
