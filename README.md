@@ -11,7 +11,7 @@ Hand: Kh Kc 3s 3h 2d (2 Pair)
 Hand: Kh Qh 6h 2h 9h (Flush)
 
 # Disclaimer
-Project assumes that the below three hands are the only ranks in poker:
+Poker has a bunch of hands but this project assumes that the below three hands are the only hands in poker:
 
 Hand: Ah As 10c 7d 6s (Pair of Aces) 2As -> 1 point
 
@@ -34,3 +34,12 @@ npm i
 ```sh
 npm test
 ```
+# Output
+Test cases
+```sh
+'Ah As 10c 7d 6s'
+'Kh Kc 3s 3h 2d'
+'Kh Qh 6h 2h 9h'
+'3d Qh 6h 2h 9h'
+```
+![Output](output.png)

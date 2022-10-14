@@ -1,4 +1,4 @@
-const determineRanks = require('./poker')
+const determineRanks = require('../poker')
  
 test('It\'s 2As', () => {
     expect(determineRanks('Ah As 10c 7d 6s')).toBe('It\'s a Pair of Aces!');

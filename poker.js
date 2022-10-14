@@ -3,7 +3,7 @@
 // Hand: Kh Kc 3s 3h 2d (2 Pair) 
 // Hand: Kh Qh 6h 2h 9h (Flush)
 
-const { pairAces, twoPair, flush } = require('./ranks')
+const { pairAces, twoPair, flush } = require('./lib/ranks')
 
 const determineRank = (hand) => {
     let rank = ''
