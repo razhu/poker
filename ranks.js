@@ -10,12 +10,12 @@ const pairAces = (hand) => { // 'Ah As 10c 7d 6s'
 
 const twoPair = (hand) => { // 'Kh Kc 3s 3h 2d'
     let cards = hand.split(' ');
-    let elements = {}
-    for( let c of cards) {
-        if(!elements[c[0]]) {
-            elements[c[0]] = 1;
+    let elements = {} // memoization
+    for(let card of cards) {
+        if(!elements[card[0]]) {
+            elements[card[0]] = 1;
         } else {
-            elements[c[0]] += 1;
+            elements[card[0]] += 1;
         }
     }
     return Object.values(elements).filter(e => e === 2).length === 2 ? 2: 0 // verifying if there is a 2 pair. 
@@ -24,7 +24,7 @@ const twoPair = (hand) => { // 'Kh Kc 3s 3h 2d'
 const flush = (hand) => { // 'Kh Qh 6h 2h 9h'
     let cards = hand.split(' ');
     let lastCharacter = cards[0][cards[0].length -1] // last caracter
-    return cards.every(c => c[(c.length) - 1] === lastCharacter) ? 5 : 0; // returning 5 or 0 points.
+    return cards.every(card => card[(card.length) - 1] === lastCharacter) ? 5 : 0; // returning 5 or 0 points.
 }
 
 module.exports = {
