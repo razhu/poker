@@ -11,7 +11,7 @@ Hand: Kh Kc 3s 3h 2d (2 Pair)
 Hand: Kh Qh 6h 2h 9h (Flush)
 
 # Disclaimer
-I did not have the time to learn the poker rules. I am going to assume that the below three are the only ranks in poker:
+Project assumes that the below three hands are the only ranks in poker:
 
 Hand: Ah As 10c 7d 6s (Pair of Aces) 2As -> 1 point
 
