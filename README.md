@@ -42,4 +42,4 @@ Test cases
 'Kh Qh 6h 2h 9h'
 '3d Qh 6h 2h 9h'
 ```
-![Output](output.png)
+![Output](images/output.png)
