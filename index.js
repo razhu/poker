@@ -8,8 +8,8 @@ const { pairAces, twoPair, flush } = require('./cards')
 function determineRank(hand) {
     const cleanHand = hand.trim()
     let rank = ''
-    const value = pairAces(cleanHand) + twoPair(cleanHand) + flush(cleanHand);
-    switch (value) {
+    const rankValue = pairAces(cleanHand) + twoPair(cleanHand) + flush(cleanHand);
+    switch (rankValue) {
         case 1:
             rank = 'Its a Pair of Aces!'
             break;
@@ -20,12 +20,13 @@ function determineRank(hand) {
             rank = 'Its a Flush!'
             break;
         default:
+            rank = 'Hand is invalid!'
             break;
     }
     return rank;
 }
 
 
-console.log(determineRank('Ah As 10c 7d 6s'));
+console.log(determineRank('Ah Bs 10c 7d 6s'));
 console.log(determineRank('Kh Kc 3s 3h 2d'));
 console.log(determineRank('Kh Qh 6h 2h 9h'));
